@@ -1,0 +1,61 @@
+// style sass
+$color1:#FEC503;
+@mixin h1h4() {
+	font-family: 'Margarine', cursive;
+	padding-top: 18px;
+	padding: 0;
+	text-shadow: 2px 2px 2px black, 3px 3px 3px $color1;
+}
+
+.navbar {
+	margin: 0;
+	padding: 0 255px;
+}
+.navbar-nav > li > a {
+	color:white;
+	text-decoration: none;
+	font-size: 1.4em;
+	letter-spacing: 1px;
+	margin-left: 50px;
+	font-weight: 600;
+	text-shadow: 2px 1px 1px black;
+}
+
+.navbar-nav > li > a:hover {
+	color: $color1;
+	text-decoration: none;
+}
+
+.navbar-toggler {
+	background-color: $color1;
+	border: 1px solid white;
+}
+.navbar-toggler span {
+	color: black;
+}
+
+.navbar-brand img {
+	max-width: 150px;
+}
+
+header {
+	background-image: url("../img/dog-820014_1920.jpg");
+	min-height: 1000px;
+	text-align: center;
+	color: white;
+	
+
+}
+ 
+
+header h4 { 
+	font-size: 2em;	
+	letter-spacing: 5px;
+	@include h1h4();
+
+}
+
+header h1 {
+	font-size: 4em;	
+	@include h1h4();
+}
