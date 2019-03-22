@@ -203,23 +203,34 @@ section .container .picture {
   width: 55%; }
 
 .team {
-  background-color: green;
   padding-top: 50px; }
+
+.row3 {
+  padding-bottom: 150px; }
 
 .team .personal-img {
   margin: 0 auto;
   float: none;
   margin-bottom: 20px; }
 
-.team .social {
-  background-color: red; }
-
 .row .icon {
-  width: 70px;
-  background-color: gray;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #212529;
   color: white;
-  font-size: 30px;
-  padding: 10px; }
+  font-size: 25px;
+  padding-top: 7px; }
+
+.row .icon:nth-child(2) {
+  margin: 20px 10px 0 10px; }
+
+.row .icon:hover {
+  background-color: #FEC503;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 @media screen and (max-width: 1199px) {
   section .services p {
@@ -315,6 +326,15 @@ section .container .picture {
   .timeline-image {
     position: absolute;
     left: -4.5%; } }
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .row .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 5px; }
+
+  .row .icon:nth-child(2) {
+    margin: 20px 1px 0 1px; } }
 @media screen and (max-width: 716px) {
   .navbar {
     margin: 0;
