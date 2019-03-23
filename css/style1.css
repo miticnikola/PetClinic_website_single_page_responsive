@@ -30,6 +30,7 @@ header {
   min-height: 900px;
   text-align: center;
   color: white;
+  padding-left: 50px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,7 +42,8 @@ header h4 {
   font-family: 'Margarine', cursive;
   padding-top: 18px;
   padding: 0;
-  text-shadow: 2px 2px 2px black, 3px 3px 3px #FEC503; }
+  text-shadow: 2px 2px 2px black, 3px 3px 3px #FEC503;
+  padding: 200px 0px 20px 0px; }
 
 header h1 {
   font-size: 4em;
@@ -232,7 +234,6 @@ section .container .picture {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-/*Contact sectiom*/
 .content-header {
   font-family: 'Oleo Script', cursive;
   color: #fcc500;
@@ -274,10 +275,10 @@ footer {
 footer .social {
   margin-top: -15px; }
 
-footer .row a:nth-child(2) {
+footer .foot2 .row a:nth-child(2) {
   margin: 0 10px; }
 
-footer .foot1, footer .foot2 a {
+footer .foot1, footer .foot3 a {
   margin: 0 auto;
   float: none;
   color: #FEC503; }
@@ -301,6 +302,12 @@ footer .foot1, footer .foot2 a {
   .timeline-image img {
     width: 100%; } }
 @media screen and (max-width: 767px) {
+  header {
+    padding: 0px; }
+
+  header h1, header h4 {
+    text-align: center; }
+
   section .services p {
     width: 90%; }
 
@@ -389,7 +396,7 @@ footer .foot1, footer .foot2 a {
   .row a:nth-child(2) {
     margin: 20px 1px 0 1px; }
 
-  footer .social.icon {
+  footer .social .icon {
     width: 50px;
     height: 50px;
     margin: 0;
@@ -399,12 +406,24 @@ footer .foot1, footer .foot2 a {
     font-size: 25px;
     padding-top: 7px; }
 
+  footer .social {
+    margin: 15px; }
+
   footer a:nth-child(2) {
-    margin: 0px 10px; } }
+    margin: 0px 10px; }
+
+  footer .foot3 {
+    margin-bottom: 50px; } }
 @media screen and (max-width: 716px) {
   .navbar {
     margin: 0;
     padding: 0 30px; } }
+@media screen and (max-width: 575px) {
+  footer .social {
+    margin: 15px; }
+
+  footer .foot3 {
+    margin-bottom: 50px; } }
 @media screen and (max-width: 537px) {
   .timeline-image {
     position: absolute;
