@@ -232,31 +232,35 @@
 <div class="container">
   <h1 class="text-center">CONTACT US</h1>
     <p class="text-center font-italic">Lorem ipsum dolor sit amet, consectetur.</p>
-<form>
+
+<form action="">
 <div class="row">
 <div class="col-12 col-md-6">
   <div class="form-group">
     <label for="exampleInputUsername">Your name</label>
-    <input type="text" class="form-control" placeholder=" Enter Name">
+    <input type="text" class="form-control" placeholder=" Enter Name" required>
   </div>
   <div class="form-group">
     <label for="exampleInputEmail">Email Address</label>
-    <input type="email" class="form-control" placeholder=" Enter Email">
+    <input type="email" class="form-control" placeholder=" Enter Email" required>
   </div>  
   <div class="form-group">
     <label for="telephone">Mobile No.</label>
-    <input type="tel" class="form-control" placeholder=" Enter mobile no.">
+    <input type="tel" class="form-control" placeholder=" Enter mobile no." required>
   </div>
 </div>
 
 <div class="col-12 col-md-6">
   <div class="form-group">
     <label for ="description"> Message</label>
-    <textarea  class="form-control" placeholder="Enter Your Message"></textarea>
+    <textarea id="message" class="form-control" placeholder="Enter Your Message" required></textarea>
+    <div class="counter"><span id="current">0</span>/<span id="max">0</span></div>
+
+
   </div>
   <div>
 
-    <button type="button" class="btn btn-outline-warning col-12">SUBMIT</button>
+    <button type="submit" value="submit" class="btn btn-outline-warning col-12">SUBMIT</button>
   </div>
   
   </div>
@@ -298,5 +302,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
